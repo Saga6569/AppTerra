@@ -1,0 +1,203 @@
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(137, 140, 132);
+
+  .main {
+    margin-top: 50px;
+    width: 375px;
+    height: 1909px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .start_bar {
+      width: 375px;
+      height: 24px;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+
+
+      .name {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        width: 120px;
+        height: 16px;
+        flex-shrink: 0;
+        margin-top: 4px;
+
+        &::before {
+          content: '';
+          background-image: url(./img/Figma.svg);
+          width: 34px;
+          height: 6px;
+          margin-left: 3px;
+          margin-right: 3px;
+        }
+
+        &::after {
+          content: '';
+          background-image: url(./img/wifi.svg);
+          width: 12px;
+          height: 9px;
+          margin-left: 6.5px;
+        }
+      }
+
+      .time {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        display: flex;
+        line-height: normal;
+        align-items: center;
+        margin-left: 40px;
+      }
+
+      .charger {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-left: 71px;
+
+        &::before {
+          content: '';
+          background-image: url(./img/bluetooth.svg);
+          width: 8px;
+          height: 13px;
+        }
+
+        &::after {
+          content: '';
+          background-image: url(./img/battery.svg);
+          width: 25px;
+          height: 11px;
+          margin-right: 5px;
+        }
+
+
+      }
+    }
+
+    .header {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .text_logo {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0 0 0 0;
+        margin-left: 25px;
+      }
+
+      .information-button_1 {
+        background-image: url(./img/logo.svg);
+        width: 24px;
+        height: 24px;
+        margin-right: 26px;
+      }
+
+    }
+
+    .block_bonus {
+      width: 335px;
+      height: 105px;
+      border-radius: 20px;
+      background: #FFF;
+      box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.20);
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+
+      .info_bonus {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .count_bonus {
+          display: flex;
+          gap: 5px;
+
+          >p {
+            color: #000;
+            font-family: Open Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            margin: 0 0 0 0
+          }
+
+        }
+
+        .description {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon_fire {
+            background-image: url(./img/fire.svg);
+            width: 13px;
+            height: 17px;
+          }
+
+          >p {
+            color: var(--unnamed, #979797);
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 0 0 0 0
+          }
+        }
+
+
+      }
+
+      .next {
+        background-image: url('./img/next.svg');
+        width: 35px;
+        height: 35px;
+      }
+
+    }
+
+    .block_red {
+      width: 375px;
+      position: relative;
+      bottom: 49px;
+      height: 148px;
+      flex-shrink: 0;
+      background: var(--unnamed, linear-gradient(180deg, #D2333E 0%, #F54B55 100%));
+    }
+
+  }
+
+}
